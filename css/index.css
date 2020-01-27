@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0% 2%;
+  }
+}
 .container img {
   margin: 0% auto 3% auto;
 }
@@ -177,12 +182,20 @@ header {
   margin: 1% auto;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
   align-items: center;
   justify-content: space-between;
+  animation-name: navAnimation;
+  animation-duration: 10s;
+}
+@keyframes navAnimation {
+  from {
+    background-color: lightblue;
+  }
+  to {
+    background-color: white;
+  }
 }
 header h1 {
-  border: 0.5px solid black;
   width: 40%;
 }
 @media (max-width: 500px) {
@@ -195,7 +208,6 @@ nav {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
   justify-content: space-evenly;
 }
 @media (max-width: 500px) {
@@ -206,7 +218,6 @@ nav {
 }
 nav a {
   width: 18%;
-  border: 1px solid black;
 }
 .footer {
   width: 100%;
@@ -237,6 +248,7 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
+    padding: 0% 2%;
   }
 }
 .home .content-section .img-content {
@@ -247,6 +259,7 @@ nav a {
   .home .content-section .img-content {
     width: 100%;
     padding-left: 0%;
+    padding: 0% 2%;
   }
 }
 .home .content-section .img-content img {
@@ -271,6 +284,12 @@ nav a {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding: 0% 2%;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
@@ -286,16 +305,50 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    margin: 1% auto 0px;
+    padding: 2%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    justify-content: center;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 70%;
+    padding: 1%;
+  }
+}
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  margin: 2% auto;
+  padding: 2% 0;
+  font-size: 1.8rem;
 }

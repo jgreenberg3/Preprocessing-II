@@ -10,8 +10,24 @@ header{
     align-items: center;
     justify-content: space-between;
 
+
+    animation-name: navAnimation;
+    animation-duration: 10s;
+  
+    @keyframes navAnimation {
+     from {
+       background-color: lightblue;
+     }
+        to {
+        background-color: white;
+     }
+    }
+
+
+
+
+
     h1{
-        border: 0.5px solid black;
         width: 40%;
 
         @media @mobile {
@@ -23,7 +39,6 @@ header{
 
 nav{
     width: 50%;
-    border: 1px solid black;
     .displayFlex();
     justify-content: space-evenly;
 
@@ -34,6 +49,5 @@ nav{
 
         a{
         width:18%;
-        border:1px solid black;
     }
 }
