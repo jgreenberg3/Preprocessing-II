@@ -1,1 +1,39 @@
 // Navigation Styles here
+
+header{
+
+    max-width: 800px;
+    width: 100%;
+    margin: 1% auto;
+    
+    .displayFlex();
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        border: 0.5px solid black;
+        width: 40%;
+
+        @media @mobile {
+            width:100%;
+            text-align: center;
+        }
+    }
+}
+
+nav{
+    width: 50%;
+    border: 1px solid black;
+    .displayFlex();
+    justify-content: space-evenly;
+
+    @media @mobile {
+        width:100%;
+        text-align: center;
+    }
+
+        a{
+        width:18%;
+        border:1px solid black;
+    }
+}
